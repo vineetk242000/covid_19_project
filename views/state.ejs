@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States Data</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 class="top">Covid-19 Trends for Indian States</h1>
+    <br><br><br>
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">State/UT</th>
+            <th scope="col">Confirmed</th>
+            <th scope="col">Active</th>
+            <th scope= "col">Recovered</th>
+            <th scope="col">Deceased</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Maharashtra</td>
+            <td class="stconfirm"><%=data.state_wise.Maharashtra.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Maharashtra.active%></td>
+            <td class="stactive"><%=data.state_wise.Maharashtra.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Maharashtra.deaths%></td>
+          </tr>
+
+          <th>2</th>
+            <td>Tamil Nadu</td>
+            <td class="stconfirm"><%=data.state_wise["Tamil Nadu"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Tamil Nadu"].active%></td>
+            <td class="stactive"><%=data.state_wise["Tamil Nadu"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Tamil Nadu"].deaths%></td>
+          </tr>
+         
+          <tr>
+            <th scope="row">3</th>
+            <td>Delhi</td>
+            <td class="stconfirm"><%=data.state_wise.Delhi.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Delhi.active%></td>
+            <td class="stactive"><%=data.state_wise.Delhi.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Delhi.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Rajasthan</td>
+            <td class="stconfirm"><%=data.state_wise.Rajasthan.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Rajasthan.active%></td>
+            <td class="stactive"><%=data.state_wise.Rajasthan.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Rajasthan.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Telangana</td>
+            <td class="stconfirm"><%=data.state_wise.Telangana.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Telangana.active%></td>
+            <td class="stactive"><%=data.state_wise.Telangana.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Telangana.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Uttar Pradesh</td>
+            <td class="stconfirm"><%=data.state_wise["Uttar Pradesh"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Uttar Pradesh"].active%></td>
+            <td class="stactive"><%=data.state_wise["Uttar Pradesh"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Uttar Pradesh"].deaths%></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Madhya Pradesh</td>
+            <td class="stconfirm"><%=data.state_wise["Madhya Pradesh"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Madhya Pradesh"].active%></td>
+            <td class="stactive"><%=data.state_wise["Madhya Pradesh"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Madhya Pradesh"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Gujarat</td>
+            <td class="stconfirm"><%=data.state_wise.Gujarat.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Gujarat.active%></td>
+            <td class="stactive"><%=data.state_wise.Gujarat.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Gujarat.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Andhra Pradesh</td>
+            <td class="stconfirm"><%=data.state_wise["Andhra Pradesh"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Andhra Pradesh"].active%></td>
+            <td class="stactive"><%=data.state_wise["Andhra Pradesh"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Andhra Pradesh"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Kerala</td>
+            <td class="stconfirm"><%=data.state_wise.Kerala.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Kerala.active%></td>
+            <td class="stactive"><%=data.state_wise.Kerala.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Kerala.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Jammu & Kashmir</td>
+            <td class="stconfirm"><%=data.state_wise["Jammu and Kashmir"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Jammu and Kashmir"].active%></td>
+            <td class="stactive"><%=data.state_wise["Jammu and Kashmir"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Jammu and Kashmir"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Karnataka</td>
+            <td class="stconfirm"><%=data.state_wise.Karnataka.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Karnataka.active%></td>
+            <td class="stactive"><%=data.state_wise.Karnataka.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Karnataka.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Haryana</td>
+            <td class="stconfirm"><%=data.state_wise.Haryana.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Haryana.active%></td>
+            <td class="stactive"><%=data.state_wise.Haryana.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Haryana.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Punjab</td>
+            <td class="stconfirm"><%=data.state_wise.Punjab.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Punjab.active%></td>
+            <td class="stactive"><%=data.state_wise.Punjab.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Punjab.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>West Bengal</td>
+            <td class="stconfirm"><%=data.state_wise["West Bengal"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["West Bengal"].active%></td>
+            <td class="stactive"><%=data.state_wise["West Bengal"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["West Bengal"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Bihar</td>
+            <td class="stconfirm"><%=data.state_wise.Bihar.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Bihar.active%></td>
+            <td class="stactive"><%=data.state_wise.Bihar.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Bihar.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td>Odisha</td>
+            <td class="stconfirm"><%=data.state_wise.Odisha.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Odisha.active%></td>
+            <td class="stactive"><%=data.state_wise.Odisha.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Odisha.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+            <td>Uttarakhand</td>
+            <td class="stconfirm"><%=data.state_wise.Uttarakhand.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Uttarakhand.active%></td>
+            <td class="stactive"><%=data.state_wise.Uttarakhand.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Uttarakhand.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td>Himachal Pradesh</td>
+            <td class="stconfirm"><%=data.state_wise["Himachal Pradesh"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Himachal Pradesh"].active%></td>
+            <td class="stactive"><%=data.state_wise["Himachal Pradesh"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Himachal Pradesh"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td>Assam</td>
+            <td class="stconfirm"><%=data.state_wise.Assam.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Assam.active%></td>
+            <td class="stactive"><%=data.state_wise.Assam.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Assam.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">21</th>
+            <td>Chandigarh</td>
+            <td class="stconfirm"><%=data.state_wise.Chandigarh.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Chandigarh.active%></td>
+            <td class="stactive"><%=data.state_wise.Chandigarh.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Chandigarh.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">22</th>
+            <td>Chhattisgarh</td>
+            <td class="stconfirm"><%=data.state_wise.Chhattisgarh.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Chhattisgarh.active%></td>
+            <td class="stactive"><%=data.state_wise.Chhattisgarh.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Chhattisgarh.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">23</th>
+            <td c>Jharkhand</td>
+            <td class="stconfirm"><%=data.state_wise.Jharkhand.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Jharkhand.active%></td>
+            <td class="stactive"><%=data.state_wise.Jharkhand.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Jharkhand.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">24</th>
+            <td>Ladakh</td>
+            <td class="stconfirm"><%=data.state_wise.Ladakh.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Ladakh.active%></td>
+            <td class="stactive"><%=data.state_wise.Ladakh.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Ladakh.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">25</th>
+            <td>Andaman & Nicobar Islands</td>
+            <td class="stconfirm"><%=data.state_wise["Andaman and Nicobar Islands"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Andaman and Nicobar Islands"].active%></td>
+            <td class="stactive"><%=data.state_wise["Andaman and Nicobar Islands"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Andaman and Nicobar Islands"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">26</th>
+            <td>Puducherry</td>
+            <td class="stconfirm"><%=data.state_wise.Puducherry.confirmed%></td>
+            <td class="strecovered" ><%=data.state_wise.Puducherry.active%></td>
+            <td class="stactive"><%=data.state_wise.Puducherry.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Puducherry.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">27</th>
+            <td>Goa</td>
+            <td class="stconfirm"><%=data.state_wise.Goa.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Goa.active%></td>
+            <td class="stactive"><%=data.state_wise.Goa.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Goa.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">28</th>
+            <td>Tripura</td>
+            <td class="stconfirm"><%=data.state_wise.Tripura.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Tripura.active%></td>
+            <td class="stactive"><%=data.state_wise.Tripura.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Tripura.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">29</th>
+            <td>Manipur</td>
+            <td class="stconfirm"><%=data.state_wise.Manipur.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Manipur.active%></td>
+            <td class="stactive"><%=data.state_wise.Manipur.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Manipur.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">30</th>
+            <td>Mizoram</td>
+            <td class="stconfirm"><%=data.state_wise.Mizoram.confirmed%></td>
+            <td class="strecovered"><%=data.state_wise.Mizoram.active%></td>
+            <td class="stactive"><%=data.state_wise.Mizoram.recovered%></td>
+            <td class="stdeath"><%=data.state_wise.Mizoram.deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">31</th>
+            <td>Dadra & Nagar Haveli</td>
+            <td class="stconfirm"><%=data.state_wise["Dadra and Nagar Haveli"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Dadra and Nagar Haveli"].active%></td>
+            <td class="stactive"><%=data.state_wise["Dadra and Nagar Haveli"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Dadra and Nagar Haveli"].deaths%></td>
+          </tr>
+          <tr>
+            <th scope="row">32</th>
+            <td>Arunachal Pradesh</td>
+            <td class="stconfirm"><%=data.state_wise["Arunachal Pradesh"].confirmed%></td>
+            <td class="strecovered"><%=data.state_wise["Arunachal Pradesh"].active%></td>
+            <td class="stactive"><%=data.state_wise["Arunachal Pradesh"].recovered%></td>
+            <td class="stdeath"><%=data.state_wise["Arunachal Pradesh"].deaths%></td>
+          </tr>
+          
+
+
+
+        </tbody>
+      </table>  
+      <br>
+      
+      </p>
+
+      <br><br><br><br><br>
+      
+      
+    <footer class="footer2"><p>Aggregated through <a href="https://www.mohfw.gov.in/">MoHFW</a> using data provided by 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE
+        All data and information provided on this site is for informational purposes only. I make no representation as to accuracy, completeness, currentness, suitability, or validity of any information on this site and will not be liable for any errors, omissions, or delays in this information or any losses, injuries, or damages arising from its display or use. All information is provided on an as-is basis.
+        <br>Made with ❤️ by Vineet<br>
+        </p></footer>
+</body>
+</html>

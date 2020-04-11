@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 India</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   <h1>Covid-19 Stats for India</h1>
+   
+   <div class="second">
+    <div class="casesin"><h3><%= statsin.latest_stat_by_country[0].total_cases %>+</h3><p class="text">Confirmed</p></div>
+    <div class="deathsin"><h3><%= statsin.latest_stat_by_country[0].total_deaths %>+</h3><p class="text">Deaths</p></div>
+    <div class="recoverin"><h3><%= statsin.latest_stat_by_country[0].total_recovered %>+</h3><p class="text">Recovered</p></div>
+  </div>
+  
+    <p class="update"> Last Update: <%= statsin.latest_stat_by_country[0].record_date %></p>
+    <h2>Covid-19 Stats of Indian States</h2>
+    
+    <div class="head">
+        <form action="/india" method="post">
+            <select id="state" name="state" class="country" placeholder="Select your State">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    
+
+
+
+                </select>
+
+
+
+
+                <button type="submit" class="button">Get Info</button>
+            </form>
+    </div>
+
+    <br><br><br><p class="update1">No Need to Panic, Stay at Home to Help the Medical Fraternity.<br>Check Facts before Forwarding any News In this Situation</p>
+
+    <br><br><br><br><br>
+        
+       
+
+
+
+
+
+    <footer class="footer2"><p> Made with ❤️ by Vineet<br><br>Aggregated through <a href="https://www.mohfw.gov.in/">MoHFW</a> using data provided by 2019 Novel Coronavirus COVID-19 (2019-nCoV)
+       
+        </p></footer>
+</body>
+</html>
