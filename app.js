@@ -52,25 +52,29 @@ app.post("/",function(req,res){
 
 app.get("/india",function(req,res){
 
+  var request = require("request");
+
   var options = {
     method: 'GET',
-    url: 'https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php',
+    url: 'https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats',
     qs: {country: 'India'},
     headers: {
-      'x-rapidapi-host': 'coronavirus-monitor.p.rapidapi.com',
+      'x-rapidapi-host': 'covid-19-coronavirus-statistics.p.rapidapi.com',
       'x-rapidapi-key': '3c25f59e85mshef136a5a563ca4dp15890djsn46a97c6778af'
     }
   };
   
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
-  
     var statsin=JSON.parse(body);
     res.render("india.ejs",{
       statsin:statsin
     })  
-  })
+    //console.log(body);
+  });
 
+  
+ 
 });
 
 app.post("/india",function(req,res){
