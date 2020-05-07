@@ -56,10 +56,9 @@ app.get("/india",function(req,res){
 
   var options = {
     method: 'GET',
-    url: 'https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats',
-    qs: {country: 'India'},
+    url: 'https://corona-virus-world-and-india-data.p.rapidapi.com/api_india',
     headers: {
-      'x-rapidapi-host': 'covid-19-coronavirus-statistics.p.rapidapi.com',
+      'x-rapidapi-host': 'corona-virus-world-and-india-data.p.rapidapi.com',
       'x-rapidapi-key': '3c25f59e85mshef136a5a563ca4dp15890djsn46a97c6778af'
     }
   };
@@ -73,7 +72,6 @@ app.get("/india",function(req,res){
     //console.log(body);
   });
 
-  
  
 });
 

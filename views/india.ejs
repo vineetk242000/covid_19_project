@@ -10,12 +10,12 @@
    <h1>Covid-19 Stats for India</h1>
    
    <div class="second">
-    <div class="casesin"><h3><%= statsin.data.covid19Stats[0].confirmed %>+</h3><p class="text">Confirmed</p></div>
-    <div class="deathsin"><h3><%= statsin.data.covid19Stats[0].deaths  %>+</h3><p class="text">Deceased</p></div>
-    <div class="recoverin"><h3><%= statsin.data.covid19Stats[0].recovered %>+</h3><p class="text">Recovered</p></div>
+    <div class="casesin"><h3><%= statsin.total_values.confirmed %>+</h3><p class="text">Confirmed</p></div>
+    <div class="deathsin"><h3><%= statsin.total_values.deaths  %>+</h3><p class="text">Deceased</p></div>
+    <div class="recoverin"><h3><%= statsin.total_values.recovered %>+</h3><p class="text">Recovered</p></div>
   </div>
   
-    <p class="update"> Last Update: <%= statsin.data.covid19Stats[0].lastUpdate   %></p>
+    <p class="update"> Last Update: <%= statsin.total_values.lastupdatedtime   %></p>
 
 
     <h2>Covid-19 Stats of Indian States</h2>
